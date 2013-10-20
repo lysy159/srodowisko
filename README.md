@@ -99,3 +99,6 @@ main(){
   printf("suma to: %i \n roznica to: %i \n iloczyn to: %i \n iloraz to: %i \n",i+j, i-j, i*j, i/j);
 }
 ```
+
+zad8 Program ktory zaczyta liczbe w syst dziesietnym a wyswietli w binarnym
+```c
