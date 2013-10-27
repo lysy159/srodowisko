@@ -123,3 +123,95 @@ for(i=i-1;i>=0;i--) printf(" %i ",wynik[i]);
 
 }
 ```
+
+zad10 Napisac program ktory  wczyta liczbe calkowita i wypisze czy jest wieksza od 5
+```c
+main () {
+  int i;
+  printf("Podaj liczbe: \n");
+  scanf("%i", &i);
+  if (i>=5)
+    printf("Twoja liczba jest wieksza lub rowna od 5 \n");
+else printf("Twoja liczba jest mniejsza od 5 \n");
+}
+```
+zad11 Napisac program ktory wczyta liczbe calkowita i wypisze czy jest dodatnia, ujemna czy rowna 0.
+```c
+main () {
+  int i;
+  printf("Podaj liczbe calkowita: \n");
+  scanf("%i", &i);
+    if(i>0)
+        printf("Twoja liczba jest dodatnia \n");
+    else if (i<0)
+              printf("Twoja liczba jest ujemna \n");
+         else
+              printf("Twoja liczba jest rowna 0 \n");
+}
+```
+
+zad12 Wczyta liczbe calkowita i wypisze czy liczba jest parzysta czy nie.
+```c
+main () {
+  int i;
+  printf("Podaj liczbe calkowita: \n");
+  scanf("%i", &i);
+  if (i%2)
+    printf("Twoja liczba jest nieparzysta\n");
+  else printf("Twoja liczba jest parzysta \n");
+}
+```
+
+zad13 Wczyta dwie liczby calkowite i wypisze czy sa rowne.
+```c
+main () {
+  int i, j;
+  printf("Podaj pierwsza liczbe \n");
+  scanf("%i", &i);
+  printf("Podaj druga liczbe \n");
+  scanf("%i", &j);
+  if (i==j)
+    printf("Twoje liczby sa rowne\n");
+  else 
+    printf("Twoje liczby nie sa rowne\n");
+}
+```
+
+zad14  Wczyta 2 liczby calkowite i wypisze ktora z nich jest wieksza
+```c
+main () {
+  int i, j;
+  printf("Podaj pierwsza liczbe: \n");
+  scanf("%i", &i);
+  printf("Podaj druga liczbe: \n");
+  scanf("%i", &j);
+  if (i>j)
+    printf("Twoja pierwsza liczba jest wieksza \n");
+    else 
+      printf("Twoja druga liczba jest wieksza \n");
+}
+```
+zad15 Obliczy i wypisze na ekran sume kwadratow liczb od 1 do 20
+```c
+main () {
+  int suma, i;
+  suma=0;
+  for(i=1; i<=20; i++)
+    suma=suma+i*i;
+  printf("Suma kwadratow liczb od 1 do 20 to: %i\n", suma);
+}
+```
+
+zad16 Wczytuje liczbe calkowita n>=0 a nastepnie n liczb rzeczywistych (double %lf) i drukuje te liczby w trzech
+kolumnach w taki sposob, zeby zachowac krycie  (tzn. kropka dziesietna zawsze byla w tych samych kolumnach) np gdy
+uzytkownik: 
+poda 7 0.12 -31,5 2,5 -59,01 26,4 -12,0 8,3 
+  kol1    kol2    kol3
+  0,12  -31,50    2,50
+-59,01   26,40  -12,00
+  8,3
+  
+  Mozna zakładac ze liczby naleza do przedzialu (-100,100).
+  Zeby wydrukowal l. rzeczywista na o dl. 6 znakow z 2 cyframi po kropce nalezy w komendzie "printf" uzyc formatu
+  "%6.2 lf"       ./zad < plik_z_danymi --> przekierowuje nas do pliku z danymi np. "n"
+  
