@@ -8,7 +8,7 @@ int main () {
 int i;
 int tabela[]={1,2,4,6,12}
 for(i=4; i>=0; i=i-1)
-printf("%i",tabela [i]
+printf("%i",tabela [i]);
 return 0;
 }
 ```
@@ -77,11 +77,12 @@ main() {
   n=1;
   suma=0;
   for(n=1; n<31; n=n+1){
-    if{ (n<16)
+    if (n<16)
+    {
   printf ("Aktualna liczba to:%i \n",n);
-
-    else{ 
- printf("Aktualna liczba to:%i \n", n*2);
+  else
+  { 
+  printf("Aktualna liczba to:%i \n", n*2);
     }
     }
 }
@@ -118,9 +119,8 @@ while(liczba!=0)
     i++;
 }
 printf("\nWYNIK:");
-for(i=i-1;i>=0;i--) printf(" %i ",wynik[i]);
-
-
+for(i=i-1; i>=0; i--) 
+printf("%i", wynik[i]);
 }
 ```
 
