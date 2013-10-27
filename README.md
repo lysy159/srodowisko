@@ -293,3 +293,28 @@ main () {
   
 }
 ```
+zad20 Zadeklaruje dwie piecioelementowe tablice liczb calkowitych, wczyta dane do pierwszej tabel, a nastepnie
+przekopijuje dane do drugiej i wypisze na ekran zawartosc drugiej tabeli.
+```c
+main () {
+  int i, j, tmp;
+    printf("Podaj liczbe \n");
+  scanf("%i", &j);
+  //deklaracja tablicy
+  int tablica[j];
+    //deklaracja 2 tablicy
+  int tab[j];
+  //petla wczytujaca dane do tablicy 1
+  for (i=0; i<j; i++)
+    scanf("%i", &tab[i]);
+  //petla kopiujaca dane z tab do tablicy
+  for (i=0; i<j; i++) 
+ tablica[i]=tab[i];
+  //petla wypisujaca dane z tablicy
+  for(i=0; i<j; i++)
+    {
+      printf("tablica[%i]=%i \n",i, tablica[i]);
+      
+    }
+} 
+```
