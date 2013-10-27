@@ -132,7 +132,8 @@ main () {
   scanf("%i", &i);
   if (i>=5)
     printf("Twoja liczba jest wieksza lub rowna od 5 \n");
-else printf("Twoja liczba jest mniejsza od 5 \n");
+    else 
+    printf("Twoja liczba jest mniejsza od 5 \n");
 }
 ```
 zad11 Napisac program ktory wczyta liczbe calkowita i wypisze czy jest dodatnia, ujemna czy rowna 0.
@@ -158,7 +159,8 @@ main () {
   scanf("%i", &i);
   if (i%2)
     printf("Twoja liczba jest nieparzysta\n");
-  else printf("Twoja liczba jest parzysta \n");
+  else 
+  printf("Twoja liczba jest parzysta \n");
 }
 ```
 
@@ -188,7 +190,7 @@ main () {
   if (i>j)
     printf("Twoja pierwsza liczba jest wieksza \n");
     else 
-      printf("Twoja druga liczba jest wieksza \n");
+    printf("Twoja druga liczba jest wieksza \n");
 }
 ```
 zad15 Obliczy i wypisze na ekran sume kwadratow liczb od 1 do 20
@@ -213,7 +215,9 @@ poda 7 0.12 -31,5 2,5 -59,01 26,4 -12,0 8,3
   
   Mozna zakładac ze liczby naleza do przedzialu (-100,100).
   Zeby wydrukowal l. rzeczywista na o dl. 6 znakow z 2 cyframi po kropce nalezy w komendzie "printf" uzyc formatu
-  "%6.2 lf"       ./zad < plik_z_danymi --> przekierowuje nas do pliku z danymi np. "n"
+  "%6.2 lf"      
+  
+  ./zad < plik_z_danymi --> przekierowuje nas do pliku z danymi np. "n"
   
 ```c
 main () {
@@ -300,21 +304,20 @@ main () {
   int i, j, tmp;
     printf("Podaj liczbe \n");
   scanf("%i", &j);
-  //deklaracja tablicy
+  //deklaracja pierwszej tablicy
   int tablica[j];
-    //deklaracja 2 tablicy
+    //deklaracja drugiej tablicy
   int tab[j];
-  //petla wczytujaca dane do tablicy 1
+  //petla wczytujaca dane do tablicy pierwszej
   for (i=0; i<j; i++)
     scanf("%i", &tab[i]);
-  //petla kopiujaca dane z tab do tablicy
+  //petla kopiujaca dane z "tab" do "tablicy"
   for (i=0; i<j; i++) 
  tablica[i]=tab[i];
   //petla wypisujaca dane z tablicy
   for(i=0; i<j; i++)
     {
       printf("tablica[%i]=%i \n",i, tablica[i]);
-      
-    }
+      }
 } 
 ```
