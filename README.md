@@ -215,3 +215,82 @@ poda 7 0.12 -31,5 2,5 -59,01 26,4 -12,0 8,3
   Zeby wydrukowal l. rzeczywista na o dl. 6 znakow z 2 cyframi po kropce nalezy w komendzie "printf" uzyc formatu
   "%6.2 lf"       ./zad < plik_z_danymi --> przekierowuje nas do pliku z danymi np. "n"
   
+```c
+main () {
+  int i, n;
+  printf("Podaj liczbe calkowita \n");
+  scanf("%i", &n);
+  /*deklaracja tablicy*/
+  double tab[n];
+    /*petla wczytujaca dane do tablicy*/
+    for (i=0; i<n; i++)
+      scanf("%lf", &tab[i]);
+  /*petala wypisujaca dane z tablicy*/
+    for (i=0; i<n; i++)
+      {
+    printf("%2.2lf \n", tab[i]);
+    if (i%3==2)
+      printf("\n");
+ }
+}
+```
+zad17 zadeklaruje tablice 5 liczb calkowitych w nastepujacy sposob: int tab[]={1,3,7,8,9{,
+a nastepnie wypisze na ekran jej zawartosc w odwrotnej kolejnosci.
+```c
+main () {
+  int tabela[]={1,3,7,8,9};
+  int i;
+  for (i=4; i>=0; i=i-1)
+    printf("%i\n", tabela[i]);
+}
+```
+
+zad18 Wczyta od uzytkownika dane do piecioelemntowej tablicy liczb calkowitych a nastepnie wypisze na 
+ekran sume jej elementow.
+```c
+main () {
+  int i, j, suma;
+  suma=0;
+  //wczytywanie ilosci liczb
+  printf("Podaj liczbe calkowita \n");
+  scanf("%i", &j);
+  //deklaracja tablicy
+  int tab[j];
+  //wczytywanie liczb do tablicy
+  for (i=0; i<j; i++)
+    scanf("%i", &tab[i]);
+  //wczytywanie liczb do tablicy
+  for (i=0; i<j; i++){
+    //printf("%i \n", tab[i]);
+    suma=suma+tab[i];
+  }
+  //wyswietlanie wyniku
+  printf("Wynik to %i \n", suma);
+  
+}
+```
+
+zad19 Wczyta od uzytkownika dane do piecioelemntowej tablicy liczb calkowitych a nastepnie przestawi jej pierwszy
+element z ostatnimi i wypisze cala tablice na ekran.
+```c
+main () {
+  int i, j, suma;
+  suma=0;
+  //wczytywanie ilosci liczb
+  printf("Podaj liczbe calkowita \n");
+  scanf("%i", &j);
+  //deklaracja tablicy
+  int tab[j];
+  //wczytywanie liczb do tablicy
+  for (i=0; i<j; i++)
+    scanf("%i", &tab[i]);
+  //wyliczanie wartosci sumy
+  for (i=0; i<j; i++){
+    //printf("%i \n", tab[i]);
+    suma=suma+tab[i];
+  }
+  //wyswietlanie wyniku
+  printf("Wynik to %i \n", suma);
+  
+}
+```
