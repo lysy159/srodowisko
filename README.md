@@ -274,23 +274,22 @@ zad19 Wczyta od uzytkownika dane do piecioelemntowej tablicy liczb calkowitych a
 element z ostatnimi i wypisze cala tablice na ekran.
 ```c
 main () {
-  int i, j, suma;
-  suma=0;
-  //wczytywanie ilosci liczb
-  printf("Podaj liczbe calkowita \n");
+  int i, j, tmp;
+  //wczytywanie liczby elementow tablicy
+  printf("Podaj liczbe calkowita: \n");
   scanf("%i", &j);
   //deklaracja tablicy
   int tab[j];
-  //wczytywanie liczb do tablicy
-  for (i=0; i<j; i++)
+  //wczytywanie danych do tablicy
+  for(i=0; i<j; i++)
     scanf("%i", &tab[i]);
-  //wyliczanie wartosci sumy
-  for (i=0; i<j; i++){
-    //printf("%i \n", tab[i]);
-    suma=suma+tab[i];
-  }
-  //wyswietlanie wyniku
-  printf("Wynik to %i \n", suma);
+  //zamiana pierwszego i piatego elementu tablicy
+  tmp=tab[0];
+  tab[0]=tab[4];
+  tab[4]=tmp;
+  //drukowanie elementow tablicy
+  for(i=0; i<j; i++)
+	printf("%i \n", tab[i]);
   
 }
 ```
