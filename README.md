@@ -34,7 +34,7 @@ main () {
 }
 ```
 
-zad 3 napisac i urochomic program w C, ktory wczytuje liczbe naturalna "n" i drukuje wartosci kwadratow.
+zad 3 napisac i urochomic program w C, ktory wczytuje liczbe naturalna "n" i drukuje wartosci kwadratow. 
 ```c
 main () {
   int n,suma,i;
@@ -321,3 +321,84 @@ main () {
       }
 } 
 ```
+zad21 Napisac program w c sprawdzajacy czy dana liczba jest pierwsza.
+```c
+main () {
+  int i, j, k;
+  k=0;
+printf("Podaj liczbe: \n");
+scanf("%i", &i);
+// liczy ilosc dzielnikow
+ for(j=1; j<=i; j++)
+   if (i%j==0)
+     k=k+1;
+ //wypisuje liczby ktore maja tylko 2 dzielniki
+ if (k==2)
+printf("Podana liczba jest pierwsza \n");
+else
+printf("Podana liczba nie jest pierwsza \n");
+}
+```
+
+zad22 Napisac program, ktory dla liczby M podanej z klawiatury ma obliczyc najmniejsza liczbe n taka jak 
+1+2+3+...+n>=M
+```c
+main () {
+  int i, n, suma;
+  n=0;
+  suma=0;
+  printf("Podaj liczbe: \n");
+  scanf("%i", &i);
+  while(suma<i)
+    {
+      n=n+1;
+      suma=suma+n;
+  }
+  printf("szukana liczba to %i \n", n);
+}
+```
+zad23 napisac program ktory dla liczby podanej z klawiatury wypisuje wszystkie jej dzielniki.
+```c
+main () {
+  int i, j, k;
+  k=0;
+printf("Podaj liczbe: \n");
+scanf("%i", &i);
+// liczy ilosc dzielnikow
+ for(j=1; j<=i; j++)
+   if (i%j==0) //sprawdza czy j jest dzielnikiem i.
+     //wypisuje dzielniki.
+     printf("%d jest dzielnikiem %d \n", j ,i);
+}
+```
+zad24 napisac program ktory zamienia liczbe z systemu dziesietnego na 
+a) dwojkowy 
+b) osemkowy 
+c) szesnatstkowy.
+
+a) Patrz wyzej ;)
+
+b)
+```c
+main () {
+  int i;
+  int j;
+  int tab[20];
+  int k;
+  printf("podaj liczbe w systemie 10: \n");
+  scanf("%i", &i);
+  j=0;
+  while (i>0)
+    {
+      tab[j]=i%8;
+      printf("Reszta %i przez 8 = %i", i,tab[j]);
+      i=i/8;
+      printf(" Liczba po dzieleniu = %i \n", i);
+      j++;
+    }
+  printf("\n wynik:");
+  for(k=j-1; k>=0; --k)
+    printf("%d", tab[k]);
+}
+```
+zad25 jaka jest roznica powmiedzy j=i++ a  j=++i
