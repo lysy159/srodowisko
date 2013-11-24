@@ -238,7 +238,7 @@ main () {
  }
 }
 ```
-zad17 zadeklaruje tablice 5 liczb calkowitych w nastepujacy sposob: int tab[]={1,3,7,8,9{,
+zad17 zadeklaruje tablice 5 liczb calkowitych w nastepujacy sposob: int tab[]={1,3,7,8,9},
 a nastepnie wypisze na ekran jej zawartosc w odwrotnej kolejnosci.
 ```c
 main () {
@@ -402,3 +402,34 @@ main () {
 }
 ```
 zad25 jaka jest roznica powmiedzy j=i++ a  j=++i
+
+ZAD 26 SWITCH
+```c
+main ()
+{
+  int A,C,F,WYB;
+ printf("Podaj liczbe A\n");
+ scanf ("%i", &A);
+ printf("Podaj liczbe C\n");
+ scanf("%i", &C);
+ printf("Podaj liczbe F\n");
+ scanf("%i", &F);
+ printf("Wybierz liczbe:\n");
+ printf("1 - Wyświetli liczbe A\n");
+ printf("2 - Wyswietli liczbe C\n");
+ printf("3 - Wyswietli liczbe F\n");
+ printf("4 - Zakonczy dzialanie programu\n");
+ scanf("%i", &WYB);
+ switch (WYB)
+   {
+   case 1: printf("Twoja liczba to: %i\n" ,A);
+     break;
+   case 2: printf("Twoja liczba to: %i\n" ,C);
+     break;
+   case 3: printf("Twoja liczba to %i\n" ,F);
+     break;
+   case 4: return 0;
+   }
+   }
+```
+
