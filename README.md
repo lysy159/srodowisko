@@ -433,3 +433,42 @@ main ()
    }
 ```
 
+27  Jaka jest wartość *wsk oraz *(wsk+2) w każdym przypadku:
+
+(a)
+
+int *wsk;
+int tab[2][2] = {{12, 14}, {16};
+wsk = tab[0];
+
+(b)
+
+int *wsk;
+int tab[2][2] = { {12}, {14, 16} };
+wsk = tab[0];
+
+```c
+#include<stdio.h>
+main () {
+  int *wsk;
+  int tab[2][2] = { {12}, {14, 16} };
+		   wsk=tab[0]; 
+		   printf("%d \n", *wsk);
+  }
+```
+
+Napisz prosty program, który sprawdzi twoje odpowiedzi.
+
+
+Ile wynosi *(wsk+1) oraz *(wsk+3)?
+```c 
+#include<stdio.h>
+main () {
+  int *wsk;
+  int tab[2][2] = {{12, 14}, {16}};
+		   wsk=tab[0]; 
+		   printf("%d %d \n", *(wsk+1), *(wsk+3));
+  }
+```
+
+
